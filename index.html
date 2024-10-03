@@ -22,7 +22,7 @@
 
   <body>
     <div class="main-container">
-      <header class="flex space-b">
+      <header class="flex-row space-b">
         <div class="logo-container">
           <h1>
             <img
@@ -33,21 +33,22 @@
           </h1>
         </div>
         <nav>
-          <ul class="flex space-b">
-            <li><a href="#hébergements">Hébergements</a></li>
-            <li><a href="#activités">Activités</a></li>
+          <ul class="flex-row space-b navbar">
+            <li class="nav-item"><a href="#hébergements">Hébergements</a></li>
+            <li class="nav-item"><a href="#activités">Activités</a></li>
           </ul>
         </nav>
       </header>
       <main>
-        <div class="search-filters flex">
+        <div class="search-filters flex-column">
           <section class="headline">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre-ville ou en pleine nature</p>
           </section>
           <form action="">
-            <div class="form-search flex">
+            <div class="form-search flex-row">
               <label for="location"
+              class="flex center"
                 ><i class="fa-solid fa-location-dot"></i
               ></label>
               <input
@@ -58,47 +59,47 @@
                 required
                 class="font-18-700"
               />
-              <button type="submit" class="form-submit desktop-submit font-18-700">
+              <button type="submit" class="form-submit desktop-submit font-18-700 flex align-ic">
                 Rechercher
               </button>
-              <button type="submit" class="form-submit mobile-submit">
+              <button type="submit" class="form-submit mobile-submit flex align-ic">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
           </form>
-          <section class="filters-section">
-            <p class="font-18-700">Filtres</p>
-            <ul>
-              <li class="filters">
+          <section class="filters-section flex-row">
+            <p class="font-18-700 flex align-ic">Filtres</p>
+            <ul class="filters-container flex">
+              <li class="filters flex center">
                 <i class="fa-solid fa-money-bill-wave"></i> Économique
               </li>
-              <li class="filters">
+              <li class="filters flex center">
                 <i class="fa-solid fa-person"></i> Familial
               </li>
-              <li class="filters">
+              <li class="filters flex center">
                 <i class="fa-solid fa-heart"></i> Romantique
               </li>
-              <li class="filters">
+              <li class="filters flex center">
                 <i class="fa-solid fa-fire"></i> Nos pépites
               </li>
             </ul>
           </section>
-          <section class="infobulle">
-            <i class="fa-solid fa-info info-icon"></i>
+          <section class="infobulle flex-row align-ic">
+            <i class="fa-solid fa-info info-icon flex center"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </section>
         </div>
-        <div class="hebergements-and-populaires flex space-b">
-          <section class="hebergements" id="hébergements-section">
-            <div class="herbergements-title">
+        <div class="places-and-popular flex-row space-b">
+          <section class="places flex-column" id="hébergements-section">
+            <div class="places-title">
               <h3 class="section-title">Hébergements à Marseille</h3>
             </div>
-            <div class="hebergement-cards flex space-b">
+            <div class="places-cards flex-row space-b">
               <a href="#">
-                <article class="card">
+                <article class="card flex-column">
                   <img src="./images/hebergements/fred-kleber.jpg" alt="" />
-                  <div class="card-content">
-                    <div class="card-txt">
+                  <div class="card-content flex-column">
+                    <div class="card-txt flex-column">
                       <h4 class="card-title">Hôtel du port</h4>
                       <p class="card-subtitle">
                         Nuit à partir de 52<span class="euro">€</span>
@@ -119,10 +120,10 @@
                 </article>
               </a>
               <a href="#">
-                <article class="card">
+                <article class="card flex-column">
                   <img src="./images/hebergements/febrian-zakaria.jpg" alt="" />
-                  <div class="card-content">
-                    <div class="card-txt">
+                  <div class="card-content flex-column">
+                    <div class="card-txt flex-column">
                       <h4 class="card-title">Hôtel Chez Amina</h4>
                       <p class="card-subtitle">
                         Nuit à partir de 96<span class="euro">€</span>
@@ -143,10 +144,10 @@
                 </article>
               </a>
               <a href="#">
-                <article class="card">
+                <article class="card flex-column">
                   <img src="./images/hebergements/reisetopia.jpg" alt="" />
-                  <div class="card-content">
-                    <div class="card-txt">
+                  <div class="card-content flex-column">
+                    <div class="card-txt flex-column">
                       <h4 class="card-title">Hôtel Les Mouettes</h4>
                       <p class="card-subtitle">
                         Nuit à partir de 76<span class="euro">€</span>
@@ -167,10 +168,10 @@
                 </article>
               </a>
               <a href="#">
-                <article class="card">
+                <article class="card flex-column">
                   <img src="./images/hebergements/annie-spratt.jpg" alt="" />
-                  <div class="card-content">
-                    <div class="card-txt">
+                  <div class="card-content flex-column">
+                    <div class="card-txt flex-column">
                       <h4 class="card-title">Hôtel de la mer</h4>
                       <p class="card-subtitle">
                         Nuit à partir de 46<span class="euro">€</span>
@@ -191,10 +192,10 @@
                 </article>
               </a>
               <a href="#">
-                <article class="card">
+                <article class="card flex-column">
                   <img src="./images/hebergements/marcus-loke.jpg" alt="" />
-                  <div class="card-content">
-                    <div class="card-txt">
+                  <div class="card-content flex-column">
+                    <div class="card-txt flex-column">
                       <h4 class="card-title">Auberge La canebière</h4>
                       <p class="card-subtitle">
                         Nuit à partir de 25<span class="euro">€</span>
@@ -215,10 +216,10 @@
                 </article>
               </a>
               <a href="#">
-                <article class="card">
+                <article class="card flex-column">
                   <img src="./images/hebergements/nicate-lee.jpg" alt="" />
-                  <div class="card-content">
-                    <div class="card-txt">
+                  <div class="card-content flex-column">
+                    <div class="card-txt flex-column">
                       <h4 class="card-title">Auberge Le Panier</h4>
                       <p class="card-subtitle">
                         Nuit à partir de 23<span class="euro">€</span>
@@ -243,16 +244,16 @@
               <p>Afficher plus</p>
             </div>
           </section>
-          <section class="populaires">
-            <div class="populaires-title flex space-b">
+          <section class="popular flex-column">
+            <div class="popular-title flex-row space-b">
               <h3 class="section-title">Les plus populaires</h3>
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
-            <div class="populaires-cards flex space-b">
+            <div class="popular-cards flex-column space-b align-ic">
               <a href="#">
-                <article class="card">
+                <article class="card flex-row">
                   <img src="./images/hebergements/emile-guillemot.jpg" alt="" />
-                  <div class="card-content flex space-b">
+                  <div class="card-content flex-column space-b">
                     <div class="card-txt">
                       <h4 class="card-title">Hôtel Le soleil du matin</h4>
                       <p class="card-subtitle">
@@ -274,9 +275,9 @@
                 </article>
               </a>
               <a href="#">
-                <article class="card">
+                <article class="card flex-row">
                   <img src="./images/hebergements/aw-creative.jpg" alt="" />
-                  <div class="card-content flex space-b">
+                  <div class="card-content flex-column space-b">
                     <div class="card-txt">
                       <h4 class="card-title">
                         Chambres d’hôtes Au cœur de l’eau
@@ -300,12 +301,12 @@
                 </article>
               </a>
               <a href="#">
-                <article class="card">
+                <article class="card flex-row">
                   <img
                     src="./images/hebergements/febrian-zakaria2.jpg"
                     alt=""
                   />
-                  <div class="card-content flex space-b">
+                  <div class="card-content flex-column space-b">
                     <div class="card-txt">
                       <h4 class="card-title">Hôtel Bleu et Blanc</h4>
                       <p class="card-subtitle">
@@ -329,21 +330,19 @@
             </div>
           </section>
         </div>
-        <section class="activités" id="activités">
-          <div class="activités-title">
+        <section class="activities flex-column">
             <h3 class="section-title">Activités à Marseille</h3>
-          </div>
-          <div class="activités-cards flex space-b">
+          <div class="activities-cards flex-row space-b">
             <a href="#">
-              <article class="card">
+              <article class="card flex-column">
                 <img src="./images/activites/reno-laithienne.jpg" alt="" />
-                <div class="card-txt">
+                <div class="card-txt align-ic">
                   <h4 class="card-title">Vieux-Port</h4>
                 </div>
               </article>
             </a>
             <a href="#">
-              <article class="card">
+              <article class="card flex-column">
                 <img src="./images/activites/paul-hermann.jpg" alt="" />
                 <div class="card-txt">
                   <h4 class="card-title">Fort de Pomègues</h4>
@@ -351,7 +350,7 @@
               </article>
             </a>
             <a href="#">
-              <article class="card">
+              <article class="card flex-column">
                 <img src="./images/activites/kilyan-sockalingum.jpg" alt="" />
                 <div class="card-txt">
                   <h4 class="card-title">Parc national des Calanques</h4>
@@ -359,7 +358,7 @@
               </article>
             </a>
             <a href="#">
-              <article class="card">
+              <article class="card flex-column">
                 <img src="./images/activites/florian-wehde.jpg" alt="" />
                 <div class="card-txt">
                   <h4 class="card-title">Notre-Dame-de-la-Garde</h4>
@@ -369,10 +368,10 @@
           </div>
         </section>
       </main>
-      <footer>
+      <footer class="flex-row footer">
         <div class="footer-containers">
           <h3 class="footer-title font-18-700">À propos</h3>
-          <ul>
+          <ul class="flex-column">
             <li>Fonctionnement du site</li>
             <li>Conditions générales</li>
             <li>Données et confidentialité</li>
@@ -380,14 +379,14 @@
         </div>
         <div class="footer-containers">
           <h3 class="footer-title">Nos hébergements</h3>
-          <ul>
+          <ul class="flex-column">
             <li>Charte qualité</li>
             <li>Proposer votre hôtel</li>
           </ul>
         </div>
         <div class="footer-containers">
           <h3 class="footer-title">Assistance</h3>
-          <ul>
+          <ul class="flex-column">
             <li>Centre d'aide</li>
             <li>Nous contacter</li>
           </ul>
