@@ -95,8 +95,8 @@ a {
 }
 
 .logo-header {
-  width: 61.09px;
-  height: 19px;
+  width: 62px;
+  height: 20px;
 }
 
 /****** Search Section ***********/
@@ -152,7 +152,7 @@ a {
 .form-submit {
     display: flex;
     align-items: center;
-    padding: 15px 16px;
+    padding: 16px;
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
     border-radius: 0px 15px 15px 0px;
@@ -193,7 +193,7 @@ a {
     align-items: center;
     height: 50px;
     margin: 0px 10px;
-    padding: 4px 19px 4px 19px;
+    padding: 4px 20px 4px 20px;
     border: 2px solid var(--border-color);
     border-radius: 25px;
     gap: 10px;
@@ -229,7 +229,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 40px;
 }
 
 .places-and-popular section {
@@ -242,7 +241,7 @@ a {
 .places {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: calc(65% - 20px);
     gap: 30px;
 }
 
@@ -256,8 +255,8 @@ a {
 
 .places-cards a {
   width: 30%;
-  min-width: 150px;
 }
+
 .places .card {
     display: flex;
     flex-direction: column;
@@ -275,7 +274,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 15px;
 }
 
 .places .card-txt {
@@ -293,7 +292,7 @@ a {
 .popular {
     display: flex;
     flex-direction: column;
-    width: 32%;
+    width: calc(35% - 20px);
     gap: 30px;
 }
 
@@ -321,7 +320,7 @@ a {
 }
 
 .popular-cards img {
-  width: 33%;
+  width: calc(35% - 8px);
   height: 136px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -331,8 +330,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 67%;
-    padding-left: 15px;
+    width: calc(65% - 8px);
+    padding-left: 16px;
 }
 
 .popular-cards .card-title {
@@ -385,7 +384,7 @@ a {
 
 .activities-cards .card-txt {
   height: 15%;
-  padding: 20px 19px 20px 19px;
+  padding: 20px;
 }
 
 /********** Footer ***********/
@@ -397,7 +396,7 @@ a {
 }
 
 .footer-containers {
-  width: 33%;
+  width: calc(100% / 3);
   padding: 20px;
 }
 
