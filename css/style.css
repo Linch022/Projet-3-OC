@@ -11,6 +11,7 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
+  --border-color : #d9d9d9;
 }
 
 .fa-solid {
@@ -62,43 +63,20 @@ a {
   color: var(--main-bg-color);
 }
 
-.font-18-700 {
-    font-size: 18px;
-    font-weight: 700;
-}
+/****** Header ***********/
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-row {
+.header-container {
     display: flex;
     flex-direction: row;
-}
-
-.space-b {
     justify-content: space-between;
 }
 
-.center {
-    justify-content: center;
-    align-items: center;
-}
-
-.align-ic {
-    align-items: center;
-}
-
-/****** Header ***********/
-
 .navbar {
-  width: 244px;
-  height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 244px;
+    height: 35px;
 }
 
 .nav-item {
@@ -124,23 +102,30 @@ a {
 /****** Search Section ***********/
 
 .search-filters {
-  gap: 35px;
-  margin: 35px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 35px 0px;
 }
 
 .headline h2 {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .form-search {
-  width: 377px;
-  height: 49px;
+    display: flex;
+    flex-direction: row;
+    width: 377px;
+    height: 49px;
 }
 
 .form-search label {
-  background-color: var(--main-bg-color);
-  width: 50px;
-  border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    width: 50px;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .form-search .fa-solid {
@@ -154,8 +139,8 @@ a {
 #location {
   width: 195px;
   border: none;
-  border-top: 1px solid var(--main-bg-color);
-  border-bottom: 1px solid var(--main-bg-color);
+  font-size: 18px;
+  font-weight: 700;
   text-align: center;
   color: black;
 }
@@ -165,11 +150,15 @@ a {
 }
 
 .form-submit {
-  padding: 15px 16px;
-  background-color: var(--main-color);
-  border: 1px solid var(--main-color);
-  border-radius: 0px 15px 15px 0px;
-  color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 15px 16px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 0px 15px 15px 0px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .mobile-submit {
@@ -182,39 +171,65 @@ a {
 
 /****** Filters Section ***********/
 
-.filters-section p {
-  margin: 10px;
+.filters-container {
+    display: flex;
+}
+
+.filters-container p {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .filters {
-  height: 50px;
-  margin: 0px 10px;
-  padding: 4px 19px 4px 19px;
-  border: 2px solid var(--main-bg-color);
-  border-radius: 25px;
-  gap: 10px;
-  font-weight: 700;
-  font-size: 17px;
-  white-space: nowrap;
+    display: flex;
 }
 
-.filters:hover {
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0px 10px;
+    padding: 4px 19px 4px 19px;
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.filter:hover {
   background-color: var(--filter-bg-color);
 }
 
 /****** Infobulle Section ***********/
+.infobulle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 .info-icon {
-  width: 24px;
-  height: 24px;
-  border: 1px solid var(--main-bg-color);
-  border-radius: 50px;
-  margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    margin-right: 10px;
 }
 
 /****** places And popular ***********/
 .places-and-popular {
-  gap: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .places-and-popular section {
@@ -225,13 +240,18 @@ a {
 
 /****** places ***********/
 .places {
-  width: 65%;
-  gap: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 30px;
 }
 
 .places-cards {
-  flex-wrap: wrap;
-  row-gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
 }
 
 .places-cards a {
@@ -239,9 +259,11 @@ a {
   min-width: 150px;
 }
 .places .card {
-  gap: 8px;
-  height: 100%;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+    width: 100%;
 }
 
 .places img {
@@ -250,12 +272,16 @@ a {
 }
 
 .places .card-content {
-  gap: 8px;
-  padding: 0px 15px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 15px 0px 15px;
 }
 
 .places .card-txt {
-  gap: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .show-more p {
@@ -265,12 +291,29 @@ a {
 
 /****** popular ***********/
 .popular {
-  width: 32%;
-  gap: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    gap: 30px;
+}
+
+.popular-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .popular-cards {
-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.popular-cards .card {
+    display: flex;
+    flex-direction: row;
 }
 
 .popular-cards a {
@@ -285,8 +328,11 @@ height: 100%;
 }
 
 .popular-cards .card-content {
-  width: 67%;
-  padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 67%;
+    padding-left: 15px;
 }
 
 .popular-cards .card-title {
@@ -304,13 +350,28 @@ height: 100%;
 
 /********** activities ***********/
 .activities {
-  padding: 30px;
-  gap: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+
+.activities-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .activities-cards .card {
-  height: 100%;
-  padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px;
+}
+
+.activities-cards .card-title {
+    display: flex;
+    align-items: center;
 }
 
 .activities-cards a {
@@ -329,8 +390,10 @@ height: 100%;
 
 /********** Footer ***********/
 
-footer {
-  background-color: var(--main-bg-color);
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-bg-color);
 }
 
 .footer-containers {
@@ -339,11 +402,15 @@ footer {
 }
 
 .footer-title {
-  margin-bottom: 15px;
+    font-size: 18;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
-.footer-containers ul {
-  gap: 15px;
+.footer-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -396,7 +463,7 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  header.flex-row {
+  .header-container {
     flex-direction: column;
   }
 
@@ -425,7 +492,7 @@ footer {
     border-bottom: 2px solid var(--main-bg-color);
   }
 
-  .nav-item li:hover {
+  .nav-item:hover {
     border-top: none;
     border-bottom: 2px solid var(--main-color);
   }
@@ -454,17 +521,20 @@ footer {
   .form-submit .fa-solid {
     color: #ffffff;
   }
-  .filters-section ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
+
+  .filters-container {
+    flex-direction: column;
   }
 
   .filters {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-items: center;
+  }
+
+  .filter {
+    width: calc(50% - 20px);
     font-size: 14px;
-    width: 100%;
-    justify-content: center;
   }
 
   .places-and-popular {
@@ -511,7 +581,7 @@ footer {
     height: 200px;
   }
 
-  footer.flex-row {
+  .footer {
     flex-direction: column;
   }
 
