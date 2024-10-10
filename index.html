@@ -34,20 +34,20 @@
         </div>
         <nav>
           <ul class="navbar">
-            <li class="nav-item"><a href="#places">Hébergements</a></li>
-            <li class="nav-item"><a href="#activities">Activités</a></li>
+            <li ><a href="#places" class="nav-item">Hébergements</a></li>
+            <li ><a href="#activities" class="nav-item">Activités</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <div class="search-filters">
-          <section class="headline">
+          <div class="headline">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre-ville ou en pleine nature</p>
-          </section>
+          </div>
           <form action="#">
             <div class="form-search">
-              <label for="location"
+              <label for="location" aria-label="Saisissez votre prochaine destination de vacances"
                 ><i class="fa-solid fa-location-dot"></i
               ></label>
               <input
@@ -68,24 +68,24 @@
           <div class="filters-container">
             <p>Filtres</p>
             <ul class="filters">
-              <li class="filter">
+              <li><button class="filter">
                 <i class="fa-solid fa-money-bill-wave"></i> Économique
-              </li>
-              <li class="filter">
+              </button></li>
+              <li><button class="filter">
                 <i class="fa-solid fa-person"></i> Familial
-              </li>
-              <li class="filter">
+              </button></li>
+              <li><button class="filter">
                 <i class="fa-solid fa-heart"></i> Romantique
-              </li>
-              <li class="filter">
+              </button></li>
+              <li><button class="filter">
                 <i class="fa-solid fa-fire"></i> Nos pépites
-              </li>
+              </button></li>
             </ul>
           </div>
-          <section class="infobulle">
+          <div class="infobulle">
             <i class="fa-solid fa-info info-icon"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
-          </section>
+          </div>
         </div>
         <div class="places-and-popular">
           <section class="places" id="places">
@@ -359,26 +359,26 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="footer-containers">
+        <div class="footer-container">
           <h3 class="footer-title">À propos</h3>
           <ul>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales</li>
-            <li>Données et confidentialité</li>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
           </ul>
         </div>
-        <div class="footer-containers">
+        <div class="footer-container">
           <h3 class="footer-title">Nos hébergements</h3>
           <ul>
-            <li>Charte qualité</li>
-            <li>Proposer votre hôtel</li>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Proposer votre hôtel</a></li>
           </ul>
         </div>
-        <div class="footer-containers">
+        <div class="footer-container">
           <h3 class="footer-title">Assistance</h3>
           <ul>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
           </ul>
         </div>
       </footer>
